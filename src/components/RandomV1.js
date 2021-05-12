@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {API_KEY} from "../apiKey"
 
-
+const API_KEY = process.env.REACT_APP_API_KEY;
 function RandomV1() {
 	useEffect(() => {
 		const fetchGif = async () => {
